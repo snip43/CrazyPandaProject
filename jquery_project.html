@@ -1,0 +1,53 @@
+<!-- реализовать slider выбора цвета текста и фона (скетч http://service.crazypanda.ru/v/clip2net/f/n/tQwmFyAgmw.png ) 
+    слайдер на странице должен быть один, 
+    переключение между настройками текста и фона происходит через переключатель
+    изменения применяются мгновенно. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <title>CrazyPandaProject</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form name="panda" id="root">
+            <fieldset>
+                <legend>Select</legend>
+                <div id="set">
+                    <div class="form_radio_btn">
+                        <input id="radio-color" type="radio" name="radio" value="1" checked />
+                        <label for="radio-color">Color</label>
+                    </div>
+
+                    <div class="form_radio_btn">
+                        <input id="radio-bg" type="radio" name="radio" value="2" />
+                        <label for="radio-bg">backgroundColor</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div id="footer">
+                <div id="sliders">
+                    <div class="slider slider_1"></div>
+                    <div class="slider slider_2"></div>
+                    <div class="slider slider_3"></div>
+                </div>
+
+                <textarea name="" id="textarea" cols="30" rows="10">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid enim esse accusamus commodi libero reprehenderit. 
+                    </textarea
+          >
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

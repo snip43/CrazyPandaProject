@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+
+form {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 600px;
+    box-shadow: -9px 2px 37px 10px lightblue;
+}
+
+#set {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sliders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+textarea {
+    color: rgb(0, 0, 0);
+}
+
+fieldset {
+    display: flex;
+    margin-bottom: 20px;
+    height: 65px;
+}
+
+legend {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.slider_1 .ui-widget-header,
+.slider_1 .ui-slider-handle {
+    background: red;
+    color: red;
+}
+
+.slider_2 .ui-widget-header,
+.slider_2 .ui-slider-handle {
+    background: lightgreen;
+}
+
+.slider_3 .ui-widget-header,
+#slider_3 .ui-slider-handle {
+    background: lightblue;
+    border: 1px solid lightblue;
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form_radio_btn input[type='radio'] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+}
+
+
+/* Checked */
+
+.form_radio_btn input[type='radio']:checked+label {
+    background: blue;
+    color: #fff;
+}
+
+
+/* Hover */
+
+.form_radio_btn label:hover {
+    color: #666;
+}
